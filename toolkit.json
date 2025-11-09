@@ -1,0 +1,16 @@
+{
+  "name": "Financial Briefing Toolkit",
+  "version": "0.0.1",
+  "description": "Toolkit providing the financial_intelligence_briefing tool.",
+  "author": "Joao",
+  "tools": [
+    {
+      "name": "financial_intelligence_briefing",
+      "class_name": "SuperAGIFinancialBriefingTool",
+      "file_name": "tools/financial_intelligence_briefing.py",
+      "description": "Generates a financial briefing (indexes, portfolio, macro, commodities, news, weather) and can email or preview it."
+    }
+  ],
+  "requirements": ["yfinance", "beautifulsoup4", "requests", "lxml", "html5lib"],
+  "environment_variables": ["GMAIL_USER", "GMAIL_APP_PASSWORD", "OPENWEATHER_API_KEY"]
+}
